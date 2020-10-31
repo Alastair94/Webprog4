@@ -1,13 +1,16 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 /* SIDEBAR MENU*/
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
@@ -24,6 +27,32 @@
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
+  background-image: linear-gradient(#5377e0, #224abe);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+  padding: 16px 8px 16px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+
+.sidenav .enlarged{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: gray;
 }
 
 /* Style page content */
@@ -32,8 +61,8 @@
   padding: 0px 10px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+/* /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */ */
+/* @media screen and (max-height: 450px) { */
+  /* .sidenav {padding-top: 15px;} */
+  /* .sidenav a {font-size: 18px;} */
+/* } */
