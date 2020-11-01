@@ -2,16 +2,16 @@
 <html lang="hu">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Bootstrap -->
 		<title>Beadandó</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<script src="https://kit.fontawesome.com/5d08bcc2c3.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css" /> <!-- Own CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap -->
+		<script src="https://kit.fontawesome.com/5d08bcc2c3.js" crossorigin="anonymous"></script> <!-- Fontawesome -->
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div id="sidenav">
-				<h3 class="enlarged"><i class="fas fa-share-alt fa-2x"></i>MODELLEK</h3>
+				<h2 class="enlarged"><i class="fas fa-share-alt fa-2x"></i>MODELLEK</h2>
 				<nav>
 					<a href="#"><i class="fas fa-newspaper"></i>HETILAP</a>
 					<a href="#"><i class="fas fa-globe-americas"></i>ONLINE</a>
@@ -25,10 +25,21 @@
 				</button>
 			</div>
 			<div class="main">
-			
-			<div>
-		<div>
-		
+				<h1>címkeajánló - HETILAP</h1>
+				<form>
+					<div class="form-group">
+						<label for="headline">Cikkek listája:</label>
+						<div class="input-group">
+							<select id="headline" class="form-control"></select>
+							<button id="btn_back_20" type="button" class="btn btn-secondary"><i class="fas fa-angle-double-left"></i></button>
+							<button id="btn_back" type="button" class="btn btn-secondary"><i class="fas fa-angle-left"></i></button>
+							<button id="btn_next" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-angle-right"></i></button>
+							<button id="btn_next_20" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-angle-double-right"></i></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
-	<script src="javascript.js"></script>
+	<script src="javascript.js"></script> <!-- Own javascript -->
 </html>
