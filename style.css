@@ -18,7 +18,7 @@ nav{
 
 #sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 200px; /* Set the width of the sidebar */
+  width: 10%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -123,4 +123,17 @@ h1{
 .blue{
 	color: #3c62d0;
 	font-weight: bold;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  height: 5%;
+  background-color: #f6f7fa;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: gray;
 }
