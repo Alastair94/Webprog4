@@ -24,7 +24,7 @@
 					<i id="angle" class="fas fa-angle-left"></i>
 				</button>
 			</div>
-			<div class="main">
+			<div id="main" class="main">
 				<h1>címkeajánló - HETILAP</h1>
 				<form>
 					<div class="form-group">
@@ -35,6 +35,29 @@
 							<button id="btn_back" type="button" class="btn btn-secondary"><i class="fas fa-angle-left"></i></button>
 							<button id="btn_next" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-angle-right"></i></button>
 							<button id="btn_next_20" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-angle-double-right"></i></button>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-9">
+								<label>Valószínűség: </label>
+								<p id="probability" class="inline"> 0.5</p>
+							</div>
+							<div class="col-sm-1">
+								<input id="min3" type="checkbox" />
+								<label for="min3">min. 3</label>
+							</div>
+							<div class="col-sm-2">
+								<p class="inline">P: 1</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-10">
+								<input id="formControlRange" class="custom-range" type="range" min="0" max="1" step="0.001" />
+							</div>
+							<div class="col-sm-2">
+								<p class="inline">R: 1</p>
+							</div>
 						</div>
 					</div>
 				</form>

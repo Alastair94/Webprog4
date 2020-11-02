@@ -1,7 +1,10 @@
 var collapseBtn = document.getElementById('collapseBtn');
 var sidenav = document.getElementById('sidenav');
+var main = document.getElementById('main');
 var angle = document.getElementById('angle');
 var headline = document.getElementById('headline');
+var formControlRange = document.getElementById('formControlRange');
+var probability = document.getElementById('probability');
 
 var orgLabel = [];
 var orgSpecLabel = [];
@@ -12,6 +15,7 @@ var list;
 
 collapseBtn.addEventListener('click', function(){
 	sidenav.classList.toggle('active');
+	main.classList.toggle('active');
 	if(angle.classList.contains("fa-angle-left")){
 		angle.classList.toggle("fa-angle-left", false);
 		angle.classList.toggle("fa-angle-right", true);
@@ -53,3 +57,7 @@ function fetchFile(){
 };
 
 fetchFile();
+
+formControlRange.addEventListener('input', e =>{
+	probability.innerHTML = e.target.value;
+})
