@@ -115,3 +115,12 @@ h1{
 .inline{
 	display: inline;
 }
+
+#probability{
+	font-weight: bold;
+}
+
+.blue{
+	color: #3c62d0;
+	font-weight: bold;
+}
